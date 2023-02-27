@@ -12,10 +12,10 @@ export const urls = [
 export const navbarUrls = [
   {
     title: 'Trending',
-    to: '/trending',
+    to: 'trending',
   },
   {
     title: 'Top Rated',
-    to: '/top-rated',
+    to: 'top-rated',
   },
 ]

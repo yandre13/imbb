@@ -6,7 +6,7 @@ export default async function Page({ params }: { params: { page: string } }) {
   const { page } = params
 
   // if page is not defined in navbarUrls, then return 404
-  if (!navbarUrls.map((url) => url.to).includes(`/${page}`)) {
+  if (!navbarUrls.map((url) => url.to).includes(page)) {
     return notFound()
   }
 
