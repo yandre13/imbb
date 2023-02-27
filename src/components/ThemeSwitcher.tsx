@@ -20,7 +20,7 @@ function getInitialTheme() {
   }
 }
 
-function ThemeSwitcher() {
+export default function ThemeSwitcher() {
   const [theme, setTheme] = useState('')
 
   const toggleTheme = () =>
@@ -57,5 +57,3 @@ function ThemeSwitcher() {
     </button>
   )
 }
-
-export default ThemeSwitcher

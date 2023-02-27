@@ -8,3 +8,14 @@ export const urls = [
     to: '/about',
   },
 ]
+
+export const navbarUrls = [
+  {
+    title: 'Trending',
+    to: '/trending',
+  },
+  {
+    title: 'Top Rated',
+    to: '/top-rated',
+  },
+]

@@ -1,18 +1,9 @@
 import Link from 'next/link'
 
-type MenuItemProps = {
-  title: string
-  to: string
-}
-
-function MenuItem({ title, to }: MenuItemProps) {
+export default function MenuItem({ title, to }: MenuItemProps) {
   return (
-    <div>
-      <Link href={to}>
-        <p>{title}</p>
-      </Link>
-    </div>
+    <Link href={to}>
+      <p>{title}</p>
+    </Link>
   )
 }
-
-export default MenuItem
