@@ -16,7 +16,7 @@ module.exports = {
       desktop: '1280px',
       // => @media (min-width: 1280px) { ... }
 
-      // desktopLarge: '1536px',
+      desktopLarge: '1536px',
       // => @media (min-width: 1536px) { ... }
     },
     container: {
@@ -26,6 +26,6 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/line-clamp')],
   darkMode: 'class',
 }

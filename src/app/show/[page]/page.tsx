@@ -1,3 +1,4 @@
+import Results from '@/components/Results'
 import { navbarUrls } from '@/data/data'
 import { getData } from '@/services/getData'
 import { notFound } from 'next/navigation'
@@ -18,13 +19,10 @@ export default async function Page({ params }: { params: { page: string } }) {
 
   return (
     <main className="container">
-      <h1 className="text-4xl font-bold">My page: {page}</h1>
-      {data.map((item) => (
-        <div key={item.id}>
-          <h2>{item.title}</h2>
-          {/* <p>{item.overview}</p> */}
-        </div>
-      ))}
+      <h1 className="mt-10 text-4xl font-bold">
+        {page.charAt(0).toUpperCase() + page.slice(1)}
+      </h1>
+      <Results results={data} />
     </main>
   )
 }
