@@ -10,7 +10,7 @@ export default function Error({ error }: { error: Error }) {
 
   return (
     <div className="container my-16">
-      <h2 className="text-red-500">Custom error: Something went wrong!</h2>
+      <h2 className="text-red-500">Default error: Something went wrong!</h2>
     </div>
   )
 }

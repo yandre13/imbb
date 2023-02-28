@@ -25,7 +25,7 @@ export default async function Movie({ params }: { params: { id: string } }) {
         <div>
           <h1 className="text-2xl font-bold">{movie.title}</h1>
           <p className="mt-5 mb-3">
-            <span className="font-semibold">Overview:</span>
+            <span className="font-semibold">Overview: </span>
             {movie.overview}
           </p>
           <p className="my-3">

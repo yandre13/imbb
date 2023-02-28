@@ -13,7 +13,7 @@ export default function Card({ movie }: { movie: Movie }) {
           alt={movie.name || movie.title || movie.original_title}
           width={500}
           height={300}
-          className="w-full rounded-lg object-cover shadow-lg"
+          className="aspect-video w-full rounded-lg object-cover shadow-lg"
           placeholder="blur"
           blurDataURL={`https://image.tmdb.org/t/p/original/${
             movie.backdrop_path || movie.poster_path

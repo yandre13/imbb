@@ -1,5 +1,6 @@
 import Header from '@/components/Header'
 import Nabvar from '@/components/Navbar'
+import SearchBox from '@/components/SearchBox'
 import '../styles/globals.css'
 
 export const metadata = {
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body className="transition-colors duration-300 dark:bg-gray-900 dark:text-white">
         <Header />
         <Nabvar />
+        <SearchBox />
         {children}
       </body>
     </html>

@@ -28,3 +28,16 @@ export async function getMovieById(id: string) {
     throw new Error('Failed to fetch data')
   }
 }
+
+export async function getMoviesByTerm(term: string) {
+  try {
+    const res = await fetch(
+      `${API_URL}/search/movie?api_key=${API_KEY}&language=en-US&query=${term}&include_adult=false`
+    )
+    const data = await res.json()
+    return data.results
+  } catch (error) {
+    console.log(error)
+    throw new Error('Failed to fetch data')
+  }
+}
